@@ -1,0 +1,23 @@
+let x=Math.floor(Math.random()*100)
+console.log(x)
+let chance=0
+let guess
+                 do{
+                      guess = Number.parseInt(prompt());
+if(x==guess){
+  console.log("guess is correct and number is" +x)
+
+}
+else if(guess<x){
+  console.log("guess is smaller than x continue guessing")
+
+}
+else if(guess>x){
+    console.log("g uess is greater than x continue guessing")
+
+}
+  chance++
+}
+  while(x!=guess)
+console.log("Time to play the match:", chance)
+console.log(`Your Score is: ${(100 - chance)}`)
